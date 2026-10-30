@@ -345,36 +345,41 @@
 
                 <!-- Form -->
                 <div class="md:col-span-7 bg-stone-100/60 p-8 rounded-2xl border border-stone-200/80">
-                    <form id="bookingForm" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="name">Adınız Soyadınız</label>
-                            <input type="text" id="name" required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="Ahmet Yılmaz">
-                        </div>
+                   <form action="https://api.web3forms.com/submit" method="POST" style="max-width: 500px; margin: 0 auto;">
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="5ed9e85d-0b14-4f20-8b1f-20497e74fcf7">
 
-                        <div>
-                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="email">E-Posta Adresiniz</label>
-                            <input type="email" id="email" required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="ahmet@example.com">
-                        </div>
+    <!-- Mail Kutunda Görünecek Başlık -->
+    <input type="hidden" name="subject" value="Web Sitesinden Yeni Randevu Talebi">
 
-                        <div>
-                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="topic">Başvuru Konusu / Alanı</label>
-                            <select id="topic" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors">
-                                <option value="Sosyal Anksiyete">Sosyal Anksiyete / Kaygı</option>
-                                <option value="Aşırı Düşünme / Ruminasyon">Aşırı Düşünme (Post-Event Processing)</option>
-                                <option value="Genel Psikolojik Danışmanlık">Genel BDT Danışmanlığı</option>
-                                <option value="Diğer">Diğer</option>
-                            </select>
-                        </div>
+    <!-- Spam Engelleme (Botlar için gizli alan) -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                        <div>
-                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="message">Kısaca Notunuz (Opsiyonel)</label>
-                            <textarea id="message" rows="3" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="Uygun olduğunuz gün/saat aralıkları veya sormak istediğiniz kısa bir soru..."></textarea>
-                        </div>
+    <!-- Form Alanları -->
+    <div style="margin-bottom: 15px; text-align: left;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Adınız Soyadınız *</label>
+        <input type="text" name="name" placeholder="Adınız Soyadınız" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+    </div>
+    
+    <div style="margin-bottom: 15px; text-align: left;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">E-posta Adresiniz *</label>
+        <input type="email" name="email" placeholder="ornek@email.com" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+    </div>
 
-                        <button type="submit" class="w-full py-3 bg-stone-800 text-stone-50 rounded-lg text-xs font-medium uppercase tracking-wider hover:bg-stone-700 transition-colors shadow-sm">
-                            Randevu Talebi Gönder
-                        </button>
-                    </form>
+    <div style="margin-bottom: 15px; text-align: left;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Telefon Numaranız</label>
+        <input type="tel" name="phone" placeholder="05XX XXX XX XX" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+    </div>
+
+    <div style="margin-bottom: 20px; text-align: left;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Mesajınız / Randevu Talebiniz *</label>
+        <textarea name="message" placeholder="Başvurmak istediğiniz konu veya randevu talebiniz..." required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; height: 120px; box-sizing: border-box; resize: vertical;"></textarea>
+    </div>
+
+    <button type="submit" style="width: 100%; background-color: #2c3e50; color: #ffffff; padding: 14px; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease;">
+        Randevu Talebi Gönder
+    </button>
+</form>
                 </div>
             </div>
         </section>
