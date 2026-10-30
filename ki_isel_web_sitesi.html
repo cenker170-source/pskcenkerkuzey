@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psikolog Cenker Kuzey (MSc). Bilişsel Davranışçı Terapi (BDT), Sosyal Anksiyete ve Zihinsel Süreçler Odağında Online & Yüz Yüze Psikolojik Danışmanlık.">
+    <meta name="keywords" content="Psikolog Cenker Kuzey, Klinik Psikolog, BDT, Sosyal Anksiyete, Online Terapi, Kent University MSc, BPS">
+    <title>Psikolog Cenker Kuzey (MSc) | Bilişsel Davranışçı Terapi & Klinik Danışmanlık</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: {
+                            50: '#FDFBF7',  /* Warm ivory background */
+                            100: '#F7F4EE',
+                            200: '#E8E5DF',  /* Muted border/accent */
+                            300: '#D5D0C7',
+                            700: '#4A4945',
+                            800: '#2C2C2C',  /* Soft black text */
+                            900: '#1A1A1A'
+                        },
+                        accent: {
+                            DEFAULT: '#7C7267',
+                            hover: '#5E564D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        mono: ['Courier Prime', 'Courier New', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #2C2C2C;
+            font-family: 'Inter', sans-serif;
+        }
+        .typewriter-sub {
+            font-family: 'Courier Prime', monospace;
+        }
+        .editorial-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E8E5DF;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D5D0C7;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-stone-200 selection:text-stone-800">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-stone-50/90 backdrop-blur-md border-b border-stone-200/60 transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-lg font-mono tracking-tight text-stone-800 hover:opacity-70 transition-opacity">
+                cenker.kuzey<span class="text-stone-400">/msc</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide text-stone-700">
+                <a href="#about" class="hover:text-stone-900 transition-colors">Hakkımda</a>
+                <a href="#specialties" class="hover:text-stone-900 transition-colors">Çalışma Alanları</a>
+                <a href="#approach" class="hover:text-stone-900 transition-colors">Yaklaşım</a>
+                <a href="#faq" class="hover:text-stone-900 transition-colors">SSS</a>
+                <a href="#contact" class="px-4 py-2 border border-stone-800 rounded-full hover:bg-stone-800 hover:text-stone-50 transition-all text-xs uppercase tracking-wider">Randevu Al</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-stone-800 p-2 focus:outline-none" aria-label="Menüyü Aç">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobileMenu" class="hidden md:hidden bg-stone-50 border-b border-stone-200 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-stone-800 text-sm font-medium">Hakkımda</a>
+            <a href="#specialties" class="block text-stone-800 text-sm font-medium">Çalışma Alanları</a>
+            <a href="#approach" class="block text-stone-800 text-sm font-medium">Yaklaşım</a>
+            <a href="#faq" class="block text-stone-800 text-sm font-medium">SSS</a>
+            <a href="#contact" class="inline-block mt-2 px-5 py-2.5 bg-stone-800 text-stone-50 rounded-full text-xs uppercase tracking-wider">Randevu Talebi</a>
+        </div>
+    </header>
+
+    <main class="mt-20">
+        <!-- Hero Section -->
+        <section class="min-h-[85vh] flex items-center justify-center px-6 py-20 border-b border-stone-200/80">
+            <div class="max-w-3xl mx-auto text-center space-y-8">
+                <div class="inline-block px-3 py-1 bg-stone-200/60 rounded-full text-xs font-mono text-stone-700 tracking-wider uppercase mb-2">
+                    Klinik Psikolog & Araştırmacı
+                </div>
+                
+                <h1 class="editorial-title text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-stone-900 leading-tight">
+                    Psikolog Cenker Kuzey <span class="text-xl sm:text-2xl italic font-serif text-stone-600 block sm:inline">(MSc)</span>
+                </h1>
+
+                <p class="typewriter-sub text-stone-600 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+                    Bilişsel Davranışçı Terapi (BDT) odağında, sosyal anksiyete, olay sonrası zihinsel işleme ve kaygı süreçlerine bilimsel ve kanıta dayalı psikolojik destek.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-stone-800 text-stone-50 rounded-full text-sm font-medium hover:bg-stone-700 transition-all shadow-sm hover:shadow text-center">
+                        Ön Görüşme Planla
+                    </a>
+                    <a href="https://wa.me/905000000000?text=Merhaba%20Cenker%20Bey,%20online%20terapi%20süreci%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3.5 border border-stone-300 rounded-full text-sm font-medium hover:border-stone-800 transition-all flex items-center justify-center gap-2 text-stone-800">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i> WhatsApp İletişim
+                    </a>
+                </div>
+
+                <!-- Credentials Badges -->
+                <div class="pt-12 flex flex-wrap justify-center items-center gap-6 sm:gap-10 text-xs font-mono text-stone-500 border-t border-stone-200/50 max-w-xl mx-auto">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap"></i> Kent Univ. MSc</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-certificate"></i> BPS Member</span>
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-brain"></i> BDT Uygulayıcısı</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 px-6 border-b border-stone-200/80">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-12 gap-12 items-start">
+                <div class="md:col-span-4 space-y-4">
+                    <span class="typewriter-sub text-xs text-stone-500 tracking-widest uppercase">/ 01. Akademik & Profil</span>
+                    <h2 class="editorial-title text-3xl font-normal text-stone-900">Bilimsel Temelli Klinik Yaklaşım</h2>
+                </div>
+                
+                <div class="md:col-span-8 space-y-6 text-stone-700 leading-relaxed font-light text-base sm:text-lg">
+                    <p>
+                        Yüksek lisans derecemi <strong class="font-normal text-stone-900">University of Kent (İngiltere)</strong> bünyesinde Klinik Psikoloji alanında tamamladım. Akademik ve klinik araştırmalarımı özellikle <span class="bg-stone-200/50 px-1 font-mono text-sm text-stone-800">Sosyal Anksiyete</span>, <span class="bg-stone-200/50 px-1 font-mono text-sm text-stone-800">Olay Sonrası Zihinsel İşleme (Post-Event Processing)</span> ve kaygı bozukluklarının bilişsel mekanizmaları üzerine yoğunlaştırdım.
+                    </p>
+                    <p>
+                        <strong class="font-normal text-stone-900">British Psychological Society (BPS)</strong> üyesi olarak, danışmanlık süreçlerimde uluslararası etikten ve kanıta dayalı yöntemlerden ödün vermeyen bir yaklaşım benimsiyorum.
+                    </p>
+                    <p>
+                        Teorik ve pratik çalışmalarımı Bilişsel Davranışçı Terapi (BDT) ilkeleri doğrultusunda şekillendirerek, danışanların düşünce-duygu-davranış döngülerini anlamlandırmalarına ve sürdürülebilir bir psikolojik esneklik kazanmalarına eşlik ediyorum.
+                    </p>
+
+                    <!-- Fast Info Grid -->
+                    <div class="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-mono">
+                        <div class="p-4 bg-stone-100/80 rounded-lg border border-stone-200/60">
+                            <span class="block text-stone-400 text-xs mb-1">EĞİTİM</span>
+                            <span class="text-stone-800 font-medium">MSc Clinical Psychology</span>
+                            <span class="block text-stone-500 text-xs mt-0.5">University of Kent, UK</span>
+                        </div>
+                        <div class="p-4 bg-stone-100/80 rounded-lg border border-stone-200/60">
+                            <span class="block text-stone-400 text-xs mb-1">ÜYELİK & AKREDİTASYON</span>
+                            <span class="text-stone-800 font-medium">British Psychological Society</span>
+                            <span class="block text-stone-500 text-xs mt-0.5">Graduate Member (MBPSS)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Areas / Specialties -->
+        <section id="specialties" class="py-24 px-6 border-b border-stone-200/80 bg-stone-100/40">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="space-y-2">
+                    <span class="typewriter-sub text-xs text-stone-500 tracking-widest uppercase">/ 02. Uzmanlık Alanları</span>
+                    <h2 class="editorial-title text-3xl sm:text-4xl font-normal text-stone-900">Çalışma Odakları</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="p-8 bg-stone-50 rounded-xl border border-stone-200/80 space-y-4 hover:shadow-sm transition-all">
+                        <div class="w-10 h-10 rounded-full bg-stone-200/60 flex items-center justify-center font-mono text-stone-700 text-sm">01</div>
+                        <h3 class="editorial-title text-xl text-stone-900">Sosyal Anksiyete & Değerlendirilme Korkusu</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed font-light">
+                            Sosyal ortamlarda olumsuz değerlendirilme endişesi, performans kaygısı ve kaçınma davranışlarının BDT protokolleri ile çalışılması.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 bg-stone-50 rounded-xl border border-stone-200/80 space-y-4 hover:shadow-sm transition-all">
+                        <div class="w-10 h-10 rounded-full bg-stone-200/60 flex items-center justify-center font-mono text-stone-700 text-sm">02</div>
+                        <h3 class="editorial-title text-xl text-stone-900">Bilişsel Süreçler & "Rumunasyon"</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed font-light">
+                            Olumsuz bir olay sonrasında zihinde sürekli "geviş getirme" (Post-Event Processing) ve aşırı düşünme döngülerinin kırılması.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-8 bg-stone-50 rounded-xl border border-stone-200/80 space-y-4 hover:shadow-sm transition-all">
+                        <div class="w-10 h-10 rounded-full bg-stone-200/60 flex items-center justify-center font-mono text-stone-700 text-sm">03</div>
+                        <h3 class="editorial-title text-xl text-stone-900">Psiko-eğitim & Kaygı Yönetimi</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed font-light">
+                            Otonom sinir sistemi mekanizmalarını anlama, yaygın anksiyete, panik hissi ve belirsizliğe tahammülsüzlük üzerine yapılanmalar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section id="approach" class="py-24 px-6 border-b border-stone-200/80">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-5 space-y-4">
+                        <span class="typewriter-sub text-xs text-stone-500 tracking-widest uppercase">/ 03. Terapi Metodolojisi</span>
+                        <h2 class="editorial-title text-3xl font-normal text-stone-900 leading-snug">Şeffaf, Şematik ve Yapılandırılmış Süreç</h2>
+                    </div>
+                    <div class="md:col-span-7">
+                        <p class="text-stone-600 text-base leading-relaxed font-light">
+                            Terapi süreci, danışan ve terapistin iş birliği içinde çalıştığı şeffaf bir yolculuktur. Belirsizliği azaltmak ve terapi başarısını artırmak adına seanslarımız belirli bir yapı ve bilimsel metodoloji çerçevesinde yürütülür.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 pt-4">
+                    <div class="p-6 bg-stone-100/50 rounded-lg border border-stone-200/50 flex flex-col sm:flex-row gap-4 items-start">
+                        <span class="font-mono text-xs px-2.5 py-1 bg-stone-800 text-stone-50 rounded uppercase">Aşama 1</span>
+                        <div>
+                            <h4 class="font-medium text-stone-800">Değerlendirme ve Formülasyon</h4>
+                            <p class="text-sm text-stone-600 mt-1 font-light">Mevcut zorlukların, tetikleyicilerin ve sürdürücü faktörlerin bilişsel haritasının çıkarılması.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-stone-100/50 rounded-lg border border-stone-200/50 flex flex-col sm:flex-row gap-4 items-start">
+                        <span class="font-mono text-xs px-2.5 py-1 bg-stone-800 text-stone-50 rounded uppercase">Aşama 2</span>
+                        <div>
+                            <h4 class="font-medium text-stone-800">Bilişsel ve Davranışsal Müdahaleler</h4>
+                            <p class="text-sm text-stone-600 mt-1 font-light">Otomatik düşünceleri inceleme, alternatif bakış açıları geliştirme ve kademeli maruz bırakma (exposure) adımları.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-stone-100/50 rounded-lg border border-stone-200/50 flex flex-col sm:flex-row gap-4 items-start">
+                        <span class="font-mono text-xs px-2.5 py-1 bg-stone-800 text-stone-50 rounded uppercase">Aşama 3</span>
+                        <div>
+                            <h4 class="font-medium text-stone-800">Özerklik ve Nüks Önleme</h4>
+                            <p class="text-sm text-stone-600 mt-1 font-light">Danışanın kendi kendisinin terapisti olabilecek becerileri kazanması ve sürecin sonlandırılması.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section id="faq" class="py-24 px-6 border-b border-stone-200/80 bg-stone-100/30">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="text-center space-y-2">
+                    <span class="typewriter-sub text-xs text-stone-500 tracking-widest uppercase">/ Sıkça Sorulan Sorular</span>
+                    <h2 class="editorial-title text-3xl font-normal text-stone-900">Merak Edilenler</h2>
+                </div>
+
+                <div class="space-y-3 pt-4" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-stone-200 rounded-lg bg-stone-50 overflow-hidden">
+                        <button class="faq-toggle w-full px-6 py-4 text-left font-medium text-stone-800 flex justify-between items-center focus:outline-none">
+                            <span>Online terapi yüz yüze terapi kadar etkili midir?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-stone-600 leading-relaxed font-light">
+                            Yapılan birçok klinik araştırma, Bilişsel Davranışçı Terapi (BDT) protokollerinin online ortamda uygulanmasının yüz yüze seanslarla eşdeğer klinik fayda sağladığını göstermektedir.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-stone-200 rounded-lg bg-stone-50 overflow-hidden">
+                        <button class="faq-toggle w-full px-6 py-4 text-left font-medium text-stone-800 flex justify-between items-center focus:outline-none">
+                            <span>Seans süresi ve sıklığı nasıl belirlenir?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-stone-600 leading-relaxed font-light">
+                            Seanslar ortalama 50 dakika sürer. Sürecin başında genellikle haftada 1 seans görüşülmesi önerilir. İlerleme sağlandıkça seans aralıkları 2 haftada bir veya ayda bire esnetilebilir.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-stone-200 rounded-lg bg-stone-50 overflow-hidden">
+                        <button class="faq-toggle w-full px-6 py-4 text-left font-medium text-stone-800 flex justify-between items-center focus:outline-none">
+                            <span>İlk ön görüşme nasıl gerçekleşir?</span>
+                            <i class="fa-solid fa-chevron-down text-xs text-stone-400 transition-transform duration-200"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-5 text-sm text-stone-600 leading-relaxed font-light">
+                            İlk buluşmamız yaklaşık 15 dakikalık ücretsiz bir online ön tanışma şeklinde gerçekleşir. Bu görüşmede çalışmak istediğiniz konuyu kısaca değerlendirir ve sürecin size uygunluğunu netleştiririz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="py-24 px-6">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-5 space-y-6">
+                    <span class="typewriter-sub text-xs text-stone-500 tracking-widest uppercase">/ İletişim & Randevu</span>
+                    <h2 class="editorial-title text-3xl sm:text-4xl font-normal text-stone-900">İletişime Geçin</h2>
+                    <p class="text-stone-600 text-sm leading-relaxed font-light">
+                        Online randevu talebinizi formu doldurarak iletebilir veya doğrudan WhatsApp hattı üzerinden ön görüşme talep edebilirsiniz.
+                    </p>
+
+                    <div class="space-y-4 pt-4 font-mono text-xs text-stone-700">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-envelope text-stone-400 text-sm"></i>
+                            <span>psk.cenkerkuzey@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-stone-400 text-sm"></i>
+                            <span>İstanbul / Online Terapi</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/905000000000?text=Merhaba%20Cenker%20Bey,%20randevu%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-700 text-white rounded-full text-xs font-medium tracking-wide hover:bg-emerald-800 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp ile Hızlı Yazışın
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="md:col-span-7 bg-stone-100/60 p-8 rounded-2xl border border-stone-200/80">
+                    <form id="bookingForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="Ahmet Yılmaz">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="email">E-Posta Adresiniz</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="ahmet@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="topic">Başvuru Konusu / Alanı</label>
+                            <select id="topic" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors">
+                                <option value="Sosyal Anksiyete">Sosyal Anksiyete / Kaygı</option>
+                                <option value="Aşırı Düşünme / Ruminasyon">Aşırı Düşünme (Post-Event Processing)</option>
+                                <option value="Genel Psikolojik Danışmanlık">Genel BDT Danışmanlığı</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-stone-600 uppercase mb-1" for="message">Kısaca Notunuz (Opsiyonel)</label>
+                            <textarea id="message" rows="3" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:border-stone-800 transition-colors" placeholder="Uygun olduğunuz gün/saat aralıkları veya sormak istediğiniz kısa bir soru..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-stone-800 text-stone-50 rounded-lg text-xs font-medium uppercase tracking-wider hover:bg-stone-700 transition-colors shadow-sm">
+                            Randevu Talebi Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="py-8 px-6 border-t border-stone-200 text-center font-mono text-xs text-stone-500">
+        <p>© 2026 Psikolog Cenker Kuzey (MSc). Tüm Hakları Saklıdır.</p>
+        <p class="mt-1 text-stone-400">University of Kent MSc Clinical Psychology | BPS Member</p>
+    </footer>
+
+    <!-- Notification Modal for Form -->
+    <div id="modal" class="fixed inset-0 bg-stone-900/40 backdrop-blur-sm hidden items-center justify-center p-4 z-50">
+        <div class="bg-stone-50 border border-stone-200 p-6 rounded-xl max-w-sm w-full text-center space-y-4 shadow-xl">
+            <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto text-lg">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="editorial-title text-xl text-stone-800">Talebiniz Alındı</h3>
+            <p id="modalMessage" class="text-xs text-stone-600 leading-relaxed font-light">
+                İletişim talebiniz başarıyla iletilmiştir. En kısa sürede belirttiğiniz e-posta veya telefon üzerinden dönüş yapılacaktır.
+            </p>
+            <button id="closeModal" class="px-5 py-2 bg-stone-800 text-stone-50 rounded-full text-xs uppercase tracking-wider">Tamam</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion Logic
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                // Toggle current FAQ
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Form Submit Simulation
+        const bookingForm = document.getElementById('bookingForm');
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('closeModal');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show custom styled notification modal instead of alert()
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            bookingForm.reset();
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        });
+    </script>
+</body>
+</html>
